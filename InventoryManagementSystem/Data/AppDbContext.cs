@@ -36,6 +36,9 @@ public class AppDbContext : DbContext
             .HasOne(o => o.Customer)
             .WithMany(c => c.Orders)
             .HasForeignKey(o => o.CustomerId);
+
+
+
     }
 }
 
